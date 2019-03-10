@@ -1,12 +1,9 @@
-var signInClose = document.getElementById('sign-in-close');
-var signUpClose = document.getElementById('sign-up-close');
-signInClose.addEventListener('click', function(){
-    close("sign-in");
+var openPosts = document.getElementById('open-posts');
+var createPosts = document.getElementById('create-posts');
+
+openPosts.addEventListener('click', function(){
+    window.open('html/bloglist.html', '_self');
 });
-signUpClose.addEventListener('click', function(){
-    close("sign-up");
-});
-function close(id){
-    document.getElementById(id).style.display = 'none';
-    document.getElementById('main-container-div').style.opacity = 1;    
-}
+createPosts.addEventListener('click', function(){
+    window.open('html/post.html', '_self');
+})

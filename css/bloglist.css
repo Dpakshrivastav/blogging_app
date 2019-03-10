@@ -62,3 +62,42 @@ body {
     width: 100%;
 
 }
+.my-icon{
+    cursor: pointer;
+    margin: 10px;
+    font-weight: lighter;
+}
+.d-flex{
+    
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   /* bring your own prefixes */
+   transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.delete{
+
+    height: 17%;
+    /* width: 100%; */
+    color: black;
+    background: white;padding: 10px;
+    text-align: center;
+
+}
+.delete-modal-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.yes-button{
+    background: red;
+    width: 35%;
+}
+.no-button{
+    width: 35%;
+}
+

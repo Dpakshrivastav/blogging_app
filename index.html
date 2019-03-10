@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    
+
     <!-- Place all CSS for header in this file -->
     <link href='css\header.css' rel='stylesheet' type='text/css'>
 
@@ -14,24 +14,24 @@
 </head>
 <body>
     <div id="main-container-div">
-
         <div class="header">
-            <input class="topButtons" type="button" value="Sign Up" id="sign-up-modal">
-            <input class="topButtons" type="button" value="Sign In" id="sign-in-modal">
+            <input class="topButtons" type="button" value="Sign Up" id="open-sign-up-modal">
+            <input class="topButtons" type="button" value="Sign In" id="open-sign-in-modal">
             <a id="pageTitle" class="logo-title">ScriBBler</a>
             <p class="middleText">Explore, Imagine, Create</p>
         </div>
-           
+
         <div class="postButtons">
-            <input class="post-button" type="button" value="All Posts">
-            <input class="post-button" type="button" value="Create Posts">
+            <input class="post-button" type="button" value="All Posts" id="open-posts">
+            <input class="post-button" type="button" value="Create Posts" id="create-posts">
         </div>
     </div>
-
+    <div class="modal" id="login-modal">
+    <!-- sign-in modal -->
     <div class="form" id="sign-in">
         <div class="form-container">
             <div class="form-heading">
-                <i class="fa fa-times fa-2x" id="sign-in-close"></i>
+                <span class="close" id="sign-in-close">&times;</span><br>
                 <h1>Welcome Back!!</h1>
                 <hr>
             </div>
@@ -45,18 +45,18 @@
                     <input type="password" name="password" id="password" placeholder="Enter Password"required>
                 </div>
             </form>
-            <button form="signupForm" id="sign-up-button">Login</button>
+            <button form="login-form" id="sign-up-button">Login</button>
             <h3>Not a member? <a class="" href="#">Sign Up</a></h3>
-        </div>
-    	<!-- Insert code for Sign In modal here -->
-
-        
+        </div>    
     </div>
 
+    </div>
+    <!-- sign-up-modal -->
+    <div class="modal" id="sign-up-modal">
     <div class="form" id="sign-up">
         <div class="form-container">
             <div class="form-heading">
-                <i class="fa fa-times fa-2x" id="sign-up-close"></i>
+                <span class="close" id="sign-up-close">&times;</span><br>
                 <h1>Get Started</h1>
                 <hr>
             </div>
@@ -65,23 +65,23 @@
                 <label>Full Name</label>
                 <input type="text" name="name" id="name" placeholder="Enter Full Name" required>
             </div>
-                        <div class="form-group">
-                            <label>Username</label>
-                            <input type="text" name="username" id="username" placeholder="Enter Username" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Password</label>
-                            <input type="password" name="password" id="password" placeholder="Enter Password"required>
-                        </div>
-                        <div class="form-group">
-                            <label>Confirm Password</label>
-                            <input type="password" name="cpassword" id="cpassword" placeholder="Confirm Password"required>
-                        </div>
-                    </form>
-                    <button form="signupForm" id="sign-up-button">SignUp</button>
-                </div>                
+            <div class="form-group">
+                <label>Username</label>
+                <input type="text" name="username" id="username" placeholder="Enter Username" required>
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" name="password" id="password" placeholder="Enter Password"required>
+            </div>
+            <div class="form-group">
+                <label>Confirm Password</label>
+                <input type="password" name="cpassword" id="cpassword" placeholder="Confirm Password"required>
+            </div>
+        </form>
+        <button form="signupForm" id="sign-up-button">SignUp</button>
+        </div>                
     </div>
-
+    </div>
     <div>
 
     	<!-- Insert code for Create Post modal here -->
