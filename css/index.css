@@ -33,5 +33,68 @@ body{
 .post-button:hover{
    opacity: 1;
 }
+.form{ 
+   width: 100%;
+   display: flex;
+   flex-flow: column;
+   align-items: center;
+   justify-content: center;   
+}
+.form-container{
+   background: white;
+   width: 35%;
+   padding: 15px;
+}
+form{
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+}
+i{
+   float: right;
+   /* margin: 10px; */
+   color: gray;
+   opacity: 0.8;
+}
+i:hover{
+   opacity: 1;
+   cursor: pointer;
+}
+
+.form-group{
+   display: flex;
+   flex-direction: column;
+   margin: 15px 0;
+}
+.form-group input{
+   /* height: 32px; */
+   background-color: honeydew;
+   color: gray;
+   border: none;
+   padding: 12px;
+}
+.form-group label{
+   font-size: 24px;
+}
+#sign-up{
+   position: absolute;
+   top: 10%;
+   /* visibility: hidden; */
+   display: none;
+}
+
+#sign-in{
+   position: absolute;
+   top: 20%;
+   display: none;
+}
+a{
+   text-decoration: none;
+}
+.form-container h3{
+   text-align: center;
+}
+
+
 /* Set a style for the rest of the elements besides the header elements on the index.html page */
                                  

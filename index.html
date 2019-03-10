@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+    
     <!-- Place all CSS for header in this file -->
     <link href='css\header.css' rel='stylesheet' type='text/css'>
 
@@ -10,14 +10,14 @@
 
 	<!-- Place all CSS for fonts in this file -->
     <link href='css\font.css' rel='stylesheet' type='text/css'>
-
+   
 </head>
 <body>
     <div id="main-container-div">
 
         <div class="header">
-            <input class="topButtons" type="button" value="Sign Up">
-            <input class="topButtons" type="button" value="Sign In">
+            <input class="topButtons" type="button" value="Sign Up" id="sign-up-modal">
+            <input class="topButtons" type="button" value="Sign In" id="sign-in-modal">
             <a id="pageTitle" class="logo-title">ScriBBler</a>
             <p class="middleText">Explore, Imagine, Create</p>
         </div>
@@ -28,16 +28,58 @@
         </div>
     </div>
 
-    <div>
-
+    <div class="form" id="sign-in">
+        <div class="form-container">
+            <div class="form-heading">
+                <i class="fa fa-times fa-2x" id="sign-in-close"></i>
+                <h1>Welcome Back!!</h1>
+                <hr>
+            </div>
+            <form id="login-form">       
+                <div class="form-group">
+                    <label>Username</label>
+                    <input type="text" name="username" id="username" placeholder="Enter Username" required>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter Password"required>
+                </div>
+            </form>
+            <button form="signupForm" id="sign-up-button">Login</button>
+            <h3>Not a member? <a class="" href="#">Sign Up</a></h3>
+        </div>
     	<!-- Insert code for Sign In modal here -->
 
+        
     </div>
 
-    <div>
-
-    	<!-- Insert code for Sign Up modal here -->
-
+    <div class="form" id="sign-up">
+        <div class="form-container">
+            <div class="form-heading">
+                <i class="fa fa-times fa-2x" id="sign-up-close"></i>
+                <h1>Get Started</h1>
+                <hr>
+            </div>
+        <form id="signupForm">        
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter Full Name" required>
+            </div>
+                        <div class="form-group">
+                            <label>Username</label>
+                            <input type="text" name="username" id="username" placeholder="Enter Username" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="password" name="password" id="password" placeholder="Enter Password"required>
+                        </div>
+                        <div class="form-group">
+                            <label>Confirm Password</label>
+                            <input type="password" name="cpassword" id="cpassword" placeholder="Confirm Password"required>
+                        </div>
+                    </form>
+                    <button form="signupForm" id="sign-up-button">SignUp</button>
+                </div>                
     </div>
 
     <div>
