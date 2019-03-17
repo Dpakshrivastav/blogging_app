@@ -1,4 +1,13 @@
+.allPostsContainer {
+    height: 100%;
+    width: 100%;
+}
+.row1,.row2,.row3 {
+    display: flex;
+    justify-content: space-around;
+}
 .post {
+    flex-basis: 40%;
     position: relative;
     width: 90%;
     height: 20%;
@@ -7,6 +16,7 @@
     margin: 10px 10px 10px 20px;
     float:left;
     border-radius: 15px;
+    margin-right: 60px;
 }
     
 .post-left {
@@ -33,6 +43,8 @@
     color: #2b312b;
     font-size: 25px;
     height: 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
     }
 .post-more {
     float: right;
@@ -41,13 +53,19 @@
     margin-right: 0 !important;
     padding-right: 0 !important;
     padding-bottom: 10px;
-    font-size: 30px;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
 .post-desc{
-    height: 100px;
+    height: auto;
     margin-bottom: 0 !important;
+    overflow: hidden;
+    height: 50px;
 }
-
 body {
     height: 100%;
     width: 100%;
@@ -57,47 +75,60 @@ body {
     background-color: orange;
     background-size: 2000% 2000%;
 }
-.allPostsContainer {
-    height: 100%;
-    width: 100%;
-
-}
-.my-icon{
+.trashicon{
+    float: right;
+    font-size: 25px;
+    padding-top: 15px;
+    font-weight: 600;
     cursor: pointer;
-    margin: 10px;
-    font-weight: lighter;
 }
-.d-flex{
-    
-   position: fixed;
-   top: 50%;
-   left: 50%;
-   /* bring your own prefixes */
-   transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.delete{
-
-    height: 17%;
-    /* width: 100%; */
-    color: black;
-    background: white;padding: 10px;
-    text-align: center;
-
-}
-.delete-modal-buttons{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: space-between;
-}
-.yes-button{
-    background: red;
-    width: 35%;
-}
-.no-button{
-    width: 35%;
+#deleteModal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+  }
+  .deleteModal-content{
+    background-color: #fefefe;
+    margin: 220px auto;
+    padding: 30px 20px;
+    border: 1px solid #888;
+    width: 28%;
+  }
+  .deleteModal-header h3 {
+    text-align: center; 
+    color: #000;
+  }
+  .deleteModal-body{
+      display: flex;
+      justify-content: space-around;
+  }
+  .yes-btn {
+      background-color:#f5564a;
+      padding: 10px 30px;
+      color: white;
+      outline: none;
+      border: none;
+      font-size: 14px;
+      width: 130px;
+      float: left;
+      cursor: pointer;
+  }
+  .no-btn{
+    background-color: #5eb762;
+    padding: 10px 30px;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    width: 130px;
+    float: right;
+    cursor: pointer;
 }
 

@@ -1,10 +1,12 @@
-var modal;
-function deleteFunc(id){
-    modal = document.getElementById("delete-post");
-    modal.style.display='block';
+var delModal = document.getElementById("deleteModal");
+function showDeleteModal(){
+    delModal.style.display ="block";
+}
+function hideModal() {
+    delModal.style.display ="none"; 
 }
 window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
+    if (event.target == delModal) {
+      delModal.style.display = "none";
+     }
 }
